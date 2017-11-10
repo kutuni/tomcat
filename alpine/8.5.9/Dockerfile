@@ -1,4 +1,4 @@
-FROM kutuni/openjdk:8-alpine
+FROM kutuni/openjdk:1.8-alpine
 
 MAINTAINER kutuni
 

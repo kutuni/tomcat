@@ -36,7 +36,6 @@ ADD docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
 HEALTHCHECK --timeout=2s CMD curl -f http://127.0.0.1:8000
 
-#RUN addgroup tomcat
-#RUN adduser -D -u 1919 -G tomcat tomcat
-
 CMD ["/run"]
+
+RUN chmod +x run docker-entrypoint.sh 
